@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+
+public class NumberComparison {
+	private static double enteredNumber;
+	private static Scanner sc;
+
+	public static void main(String[] args) {
+		try {
+			while (true) {
+				System.out.println("Введите число");
+				sc = new Scanner(System.in);
+				enteredNumber = sc.nextDouble();
+				if (enteredNumber > 7) {
+					System.out.println("Привет");
+					break;
+				} else {
+					System.out.println("Число не больше 7");
+				}
+			}
+		} catch (Exception error) {
+			System.out.println(error);
+		}
+	}
+}
